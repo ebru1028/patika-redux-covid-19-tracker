@@ -1,0 +1,60 @@
+.cards {
+    margin-bottom: 50px;
+
+    .wrapper {
+        width: 100%;
+        max-width: 1232px;
+        padding: 25px 15px;
+        margin: 0 auto;
+
+        .items {
+            width: 100%;
+            display: flex;
+
+            @include md {
+                flex-wrap: wrap;
+            }
+
+            @include sm {
+                flex-wrap: wrap;
+            }
+
+            .item {
+                width: 25%;
+                padding: 10px 20px;
+               
+                @include md {
+                    width: 50%;
+                }
+
+                @include sm{
+                    width: 100%;
+                }
+
+                .inner {
+                    text-align: left;
+                    padding: 12px;
+                
+
+                    h1 {
+                        color: rgba(0, 0, 0, 0.87);
+                        margin-bottom: 0.35em;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        line-height: 1.5;
+                        letter-spacing: 0.00938em;
+                    }
+
+                    span {
+                        font-size: 1.5rem !important;
+                        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                        font-weight: 400;
+                        line-height: 1.334;
+                        letter-spacing: 0em;
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.header{
+    margin: 50px 0;
+
+    .wrapper{
+        width: 100%;
+        max-width: 1232px;
+        padding: 25px 15px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        
+        .inner{
+            max-width: 370px;
+            width: 100%;
+            display: block;
+            text-align: center;
+
+            img{
+                max-width: 370px;
+                width: 100%;
+            }
+
+            .title{
+                font-weight: bold;
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+
+            .sub-title{
+                font-size: 14px;
+                font-style: italic;
+                color: rgba(0, 0, 0, 0.87);
+            }
+            
+        }
+       
+    }
+}

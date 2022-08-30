@@ -1,0 +1,20 @@
+.graphic{
+    margin-bottom: 50px;
+
+    .wrapper{
+        width: 100%;
+        max-width: 1232px;
+        padding: 25px 15px;
+        margin: 0 auto;
+
+        .item{
+            max-width: 1232px;
+            width: 100% !important;
+            height: 300px !important;
+
+            svg{
+                width: 100% !important;
+            }
+        }
+    }
+}

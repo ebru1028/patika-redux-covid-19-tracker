@@ -1,0 +1,73 @@
+/* BREAKPOINTS START */
+
+$screen-sm-max: 576px;
+
+$screen-md-max: 768px;
+
+$screen-lg-max: 1200px;
+
+@mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: #{$screen-md-max}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: #{$screen-lg-max}) {
+        @content;
+    }
+}
+
+@mixin rwd($screen) {
+    @media (max-width: $screen + 'px') {
+        @content;
+    }
+}
+
+/* BREAKPOINTS END */
+
+@font-face {
+    font-family: 'Roboto Sans Serif';
+    src: local('Roboto Sans Serif'), url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;800&display=swap') format('truetype');
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+}
+
+.infected {
+    background-color: rgba(102, 179, 255, 0.5) !important;
+    border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+}
+
+.recovered {
+    background-color: rgba(191, 242, 202, 0.5) !important;
+    border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+}
+
+.deaths {
+    background-color: rgba(237, 178, 178, 0.5) !important;
+    border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+}
+
+.active {
+    background-color: rgba(237, 199, 152, 0.5) !important;
+    border-bottom: 10px solid rgba(242, 234, 0, 0.5);
+}
+
+@import 'modules/_header';
+@import 'modules/_cards';
+@import 'modules/_form';
+@import 'modules/graphic';
+@import 'modules/footer';

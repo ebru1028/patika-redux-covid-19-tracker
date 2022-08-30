@@ -1,0 +1,47 @@
+.form {
+    margin-bottom: 50px;
+
+    .wrapper {
+        width: 100%;
+        max-width: 1232px;
+        padding: 25px 15px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        .inner {
+            max-width: 450px;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+
+            select {
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                width: 100%;
+                cursor: pointer;
+                min-width: 16px;
+                user-select: none;
+                border-radius: 0;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+
+                &:checked{
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
+                }
+            }
+
+            .select-icon {
+                max-width: 30px;
+                top: calc(50% - 20px);
+                color: rgba(0, 0, 0, 0.54);
+                right: 0;
+                position: absolute;
+                pointer-events: none;
+            }
+        }
+    }
+}

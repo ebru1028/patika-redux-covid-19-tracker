@@ -1,0 +1,18 @@
+.footer{
+    margin-bottom: 50px;
+
+    .wrapper{
+        width: 100%;
+        max-width: 1232px;
+        padding: 25px 15px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        .inner{
+            display: block;
+            text-align: center;
+        }
+       
+    }
+}
